@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#173d32">
+
+<title>Oakpark Academy | Kindergarten, Primary & Junior School</title>
+<meta name="description" content="Discover Oakpark Academy in Uthiru, Nairobi — a learning community for kindergarten, primary and junior school learners. Contact us to enquire about admissions.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green: #173d32;
+  --green-light: #285848;
+  --cream: #f7f5ef;
+  --gold: #d8ad63;
+  --text: #292e2b;
+  --muted: #69716c;
+  --white: #ffffff;
+  --border: #e6e5dd;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--white);
+  font-family: var(--sans);
+  line-height: 1.7;
+}
+
+body, button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+.container {
+  width: min(1160px, calc(100% - 44px));
+  margin: 0 auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--green-light);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+h1, h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+}
+
+h2 {
+  margin-bottom: 18px;
+  font-size: clamp(32px, 4vw, 47px);
+}
+
+.section-intro {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+.section-heading {
+  max-width: 720px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.section {
+  padding: 92px 0;
+}
+
+/* Top contact strip */
+
+.topbar {
+  background: var(--green);
+  color: #f6f4ec;
+  font-size: 12px;
+}
+
+.topbar-inner {
+  display: flex;
+  min-height: 38px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.topbar p {
+  margin: 0;
+}
+
+.topbar a {
+  color: white;
+}
+
+.topbar a:hover {
+  text-decoration: underline;
+}
+
+/* Main navigation */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(12px);
+}
+
+.nav-inner {
+  display: flex;
+  min-height: 88px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  flex-shrink: 0;
+}
+
+.brand-mark {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.brand-name {
+  display: block;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.brand-caption {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.nav-links a {
+  color: #353c37;
+  font-size: 13px;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #9a7131;
+}
+
+.nav-links .nav-cta {
+  padding: 12px 18px;
+  border-radius: 3px;
+  background: var(--green);
+  color: white;
+}
+
+.nav-links .nav-cta:hover {
+  background: var(--green-light);
+  color: white;
+}
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: white;
+  color: var(--green);
+  font-size: 23px;
+  cursor: pointer;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 590px;
+  align-items: center;
+  overflow: hidden;
+  background: #263f34;
+  color: white;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+}
+
+.hero::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg,
+      rgba(15, 37, 29, 0.86) 0%,
+      rgba(15, 37, 29, 0.66) 44%,
+      rgba(15, 37, 29, 0.13) 100%);
+  content: "";
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 100px;
+}
+
+.hero-copy {
+  max-width: 670px;
+}
+
+.hero .eyebrow {
+  color: #f0d29a;
+}
+
+.hero h1 {
+  max-width: 660px;
+  margin-bottom: 22px;
+  font-size: clamp(42px, 6vw, 70px);
+  letter-spacing: -1.7px;
+}
+
+.hero p {
+  max-width: 520px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 16px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.btn {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: transform 0.2s, background 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #202d25;
+}
+
+.btn-gold:hover {
+  background: #e8c581;
+}
+
+.btn-outline {
+  border-color: rgba(255, 255, 255, 0.65);
+  color: white;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hero-note {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(18, 43, 33, 0.86);
+}
+
+.hero-note-inner {
+  display: flex;
+  min-height: 58px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  color: #f7f4ed;
+  font-size: 12px;
+}
+
+.hero-note strong {
+  color: #f0d29a;
+  font-weight: 600;
+}
+
+/* Welcome */
+
+.welcome-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.welcome-copy p {
+  color: var(--muted);
+}
+
+.welcome-copy .lead {
+  color: #424a45;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 8px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.text-link:hover {
+  color: #a47c3b;
+}
+
+.welcome-photo {
+  position: relative;
+  min-height: 410px;
+}
+
+.welcome-photo img {
+  width: 100%;
+  height: 410px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.photo-caption {
+  position: absolute;
+  right: -18px;
+  bottom: 22px;
+  max-width: 225px;
+  padding: 18px 22px;
+  background: var(--green);
+  color: white;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.photo-caption strong {
+  display: block;
+  margin-bottom: 3px;
+  color: #f0d29a;
+  font-family: var(--serif);
+  font-size: 20px;
+}
+
+.photo-caption span {
+  font-size: 12px;
+}
+
+/* Learning stages */
+
+.stages {
+  background: var(--cream);
+}
+
+.stage-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.stage-card {
+  overflow: hidden;
+  background: white;
+  border: 1px solid #eeece4;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.stage-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(26, 49, 38, 0.08);
+}
+
+.stage-card img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+}
+
+.stage-card-content {
+  padding: 27px 25px 30px;
+}
+
+.stage-number {
+  color: #a78246;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+}
+
+.stage-card h3 {
+  margin: 10px 0 12px;
+  color: var(--green);
+  font-family: var(--serif);
+  font-size: 24px;
+}
+
+.stage-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Values strip */
+
+.values {
+  padding: 60px 0;
+  background: var(--green);
+  color: white;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 38px;
+}
+
+.value-item {
+  padding-left: 21px;
+  border-left: 2px solid var(--gold);
+}
+
+.value-item h3 {
+  margin-bottom: 8px;
+  color: #f0d29a;
+  font-family: var(--serif);
+  font-size: 22px;
+}
+
+.value-item p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+}
+
+/* School life */
+
+.school-life-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  align-items: center;
+  gap: 70px;
+}
+
+.school-life-copy p {
+  color: var(--muted);
+}
+
+.activity-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 14px;
+  border: 1px solid var(--border);
+  color: #35433b;
+  font-size: 13px;
+}
+
+.activity-mark {
+  color: #a47c3b;
+  font-size: 18px;
+}
+
+.school-life-photo img {
+  width: 100%;
+  height: 440px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+/* Gallery */
+
+.gallery-section {
+  padding-top: 80px;
+  background: var(--cream);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  grid-template-rows: 220px 220px;
+  gap: 15px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  background: #e3e3dc;
+}
+
+.gallery-item:first-child {
+  grid-row: span 2;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.045);
+}
+
+.gallery-label {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 32px 17px 14px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.66));
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Admissions */
+
+.admissions {
+  padding: 88px 0;
+}
+
+.admissions-panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 35px;
+  padding: 52px 55px;
+  background: #f0eee6;
+  border-left: 4px solid var(--gold);
+}
+
+.admissions-panel h2 {
+  max-width: 610px;
+  margin-bottom: 13px;
+  font-size: clamp(30px, 4vw, 43px);
+}
+
+.admissions-panel p {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.admissions-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 175px;
+}
+
+.btn-green {
+  background: var(--green);
+  color: white;
+}
+
+.btn-green:hover {
+  background: var(--green-light);
+}
+
+.btn-light {
+  border-color: #c8c9bf;
+  color: var(--green);
+}
+
+.btn-light:hover {
+  background: white;
+}
+
+/* Contact */
+
+.contact-section {
+  background: #faf9f5;
+  border-top: 1px solid var(--border);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+}
+
+.contact-copy p {
+  color: var(--muted);
+}
+
+.contact-detail {
+  margin-top: 28px;
+}
+
+.contact-detail p {
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.contact-detail strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--green);
+}
+
+.contact-detail a {
+  color: #4c6556;
+}
+
+.contact-detail a:hover {
+  text-decoration: underline;
+}
+
+.map-panel {
+  display: flex;
+  min-height: 360px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 36px;
+  background:
+    linear-gradient(0deg, rgba(19, 49, 37, 0.92), rgba(19, 49, 37, 0.25)),
+    url("https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGrtTe1tuUvPTtv4Y2hRpgwziIqmNMSvJ50VqtWiy9bC3hrm2Oj2a-AvFcfU3jVpJQl9DqkFrGx83B8k_1P2GbGHR0IjA7IegSPYKowI88cGL7PXV2AIzOqlJb0XxgS7RbxyUwag=w1200-h900-k-no") center / cover;
+  color: white;
+}
+
+.map-panel h3 {
+  margin-bottom: 10px;
+  font-family: var(--serif);
+  font-size: 29px;
+}
+
+.map-panel p {
+  max-width: 400px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+}
+
+/* Footer */
+
+.site-footer {
+  padding: 36px 0;
+  background: #102d24;
+  color: rgba(255, 255, 255, 0.77);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer-brand {
+  color: white;
+  font-family: var(--serif);
+  font-size: 20px;
+}
+
+.footer-inner p {
+  margin: 6px 0 0;
+  font-size: 11px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.footer-links a:hover {
+  color: #f0d29a;
+}
+
+/* Gentle reveal animation */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 980px) {
+  .nav-inner {
+    min-height: 78px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: stretch;
+    gap: 0;
+    padding: 12px 22px 22px;
+    background: white;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.06);
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    padding: 13px 3px;
+    border-bottom: 1px solid #f0efe9;
+  }
+
+  .nav-links .nav-cta {
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .welcome-grid,
+  .school-life-grid {
+    gap: 40px;
+  }
+
+  .admissions-panel {
+    padding: 38px;
+  }
+
+  .contact-grid {
+    gap: 40px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 680px) {
+  .container {
+    width: min(100% - 32px, 1160px);
+  }
+
+  .topbar-inner {
+    min-height: 36px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .topbar-inner p:first-child {
+    display: none;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .brand-caption {
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .hero {
+    min-height: 600px;
+  }
+
+  .hero-image {
+    object-position: 56% center;
+  }
+
+  .hero::after {
+    background: linear-gradient(
+      90deg,
+      rgba(15, 37, 29, 0.85),
+      rgba(15, 37, 29, 0.49)
+    );
+  }
+
+  .hero-content {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 11vw, 58px);
+    letter-spacing: -1px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-note-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .welcome-grid,
+  .school-life-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .welcome-photo {
+    min-height: 310px;
+    margin-right: 10px;
+  }
+
+  .welcome-photo img {
+    height: 310px;
+  }
+
+  .photo-caption {
+    right: -10px;
+    bottom: 15px;
+  }
+
+  .stage-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stage-card img {
+    height: 235px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .school-life-photo img {
+    height: 310px;
+  }
+
+  .activity-list {
+    gap: 9px;
+  }
+
+  .activity {
+    padding: 11px 9px;
+    font-size: 12px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 230px 165px 165px;
+    gap: 10px;
+  }
+
+  .gallery-item:first-child {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .admissions {
+    padding: 60px 0;
+  }
+
+  .admissions-panel {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 30px 23px;
+  }
+
+  .admissions-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .map-panel {
+    min-height: 320px;
+    padding: 25px;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    gap: 12px 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Top contact bar -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <p>Oakpark Academy · Uthiru, Nairobi</p>
+    <p>
+      Call us:
+      <a href="tel:+254795558185">+254 795 558185</a>
+    </p>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container nav-inner">
+
+    <a class="brand" href="#home" aria-label="Oakpark Academy home">
+      <span class="brand-mark">OA</span>
+      <span>
+        <span class="brand-name">Oakpark Academy</span>
+        <span class="brand-caption">Kindergarten · Primary · Junior School</span>
+      </span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="navLinks"
+    >☰</button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">Our School</a>
+      <a href="#learning">Learning</a>
+      <a href="#school-life">School Life</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#admissions">Admissions Enquiry</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <img
+      class="hero-image"
+      src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RcrANWIuuibVgcu5vTnZlxrHYp2NwK4S6TXu1lryP7Y_BfVopt9gDA1qpIeCZAKtuXKjoUeB2mj9k6w00Wm7T2Ny2nO-mnn494IFBzAPvo8Zz1KkwqlD1iHcXYNSSB_jtZXotM=w1600-h1000-k-no"
+      alt="Oakpark Academy school environment"
+      fetchpriority="high"
+      onerror="this.style.display='none'"
+    >
+
+    <div class="container hero-content">
+      <div class="hero-copy">
+        <span class="eyebrow">Welcome to Oakpark Academy</span>
+
+        <h1>A place to learn, grow and discover.</h1>
+
+        <p>
+          From the first steps in kindergarten to the next stage of learning,
+          we want every child to have the opportunity to explore their
+          abilities, build confidence and develop a love for learning.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#admissions">Enquire About Admission</a>
+          <a class="btn btn-outline" href="#about">Discover Our School</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-note">
+      <div class="container hero-note-inner">
+        <span><strong>Oakpark Academy</strong> · Uthiru, Nairobi</span>
+        <span>Kindergarten · Primary · Junior School</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Welcome section -->
+  <section class="section" id="about">
+    <div class="container welcome-grid">
+
+      <div class="welcome-copy reveal">
+        <span class="eyebrow">A little about us</span>
+
+        <h2>Growing curious minds, one day at a time.</h2>
+
+        <p class="lead">
+          School is about more than lessons. It is also where children begin
+          to find their voices, form friendships and discover what they can do.
+        </p>
+
+        <p>
+          At Oakpark Academy, learning brings together classroom experiences,
+          personal development and activities that give children room to
+          discover their interests. We aim to create an environment where
+          learners can develop academically and socially as they progress
+          through school.
+        </p>
+
+        <p>
+          Our school serves families looking for kindergarten, primary and
+          junior school education in the Uthiru area of Nairobi.
+        </p>
+
+        <a class="text-link" href="#learning">
+          Explore our learning stages <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="welcome-photo reveal">
+        <img
+          src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SGrtTe1tuUvPTtv4Y2hRpgwziIqmNMSvJ50VqtWiy9bC3hrm2Oj2a-AvFcfU3jVpJQl9DqkFrGx83B8k_1P2GbGHR0IjA7IegSPYKowI88cGL7PXV2AIzOqlJb0XxgS7RbxyUwag=w1000-h850-k-no"
+          alt="Learning environment at Oakpark Academy"
+          loading="lazy"
+          onerror="this.style.display='none'"
+        >
+
+        <div class="photo-caption">
+          <strong>Every child matters.</strong>
+          <span>Learning, discovery and personal growth.</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Learning stages -->
+  <section class="section stages" id="learning">
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <span class="eyebrow">Learning at Oakpark</span>
+        <h2>Every stage has its own journey.</h2>
+        <p class="section-intro">
+          Children change as they grow. Our learning stages provide a clear
+          way for families to explore the school experience that suits their
+          child's age and next step.
+        </p>
+      </div>
+
+      <div class="stage-grid">
+
+        <article class="stage-card reveal">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ql33Z8gfMB8RZuOiQDBqZN1wK84vgDFlWBWn-T3aEhl3dCgQzKiL-4t13J0FaRvGvCf0HMpBe0JGdIS5ebwUaKGDiQbFWofuEFM1-MvzNtC5RB6nljtjk21iwUX6CbGvPSL4c=w900-h1000-k-no"
+            alt="Early childhood learning space"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+
+          <div class="stage-card-content">
+            <span class="stage-number">01 · EARLY YEARS</span>
+            <h3>Kindergarten</h3>
+            <p>
+              The early years are a time for asking questions, discovering
+              new things, making friends and building a foundation for
+              future learning.
+            </p>
+          </div>
+        </article>
+
+        <article class="stage-card reveal">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHbURNg2rgbNVfMRVkn2jUuuXeARJGfxCBHGzjDECK_fRD7o0ZiXnF-pRMjTYXXg5tA3M3VInniPkQKOWNHMgjWAqE825GOD2smO7Kh7TXzh2qT463vdznbmZ9ctmeZfyUeJa3=w1000-h800-k-no"
+            alt="School classroom at Oakpark Academy"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+
+          <div class="stage-card-content">
+            <span class="stage-number">02 · BUILDING FOUNDATIONS</span>
+            <h3>Primary School</h3>
+            <p>
+              A stage for strengthening core skills, developing independent
+              thinking and building the confidence to take on new challenges.
+            </p>
+          </div>
+        </article>
+
+        <article class="stage-card reveal">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Ty1imlR8lTW3S7Z8mRstkdFcEHKy7i6nolcwp2JHvzFiOPhB6dafgHujGavTdy7r3Up83aYWv4mfzDVjuUCqGKcNB4YW14chqBMHwP37aqSELyoaRgW_yxg5vmhqemDKEj4M5LCQ=w900-h1000-k-no"
+            alt="School facilities and learning spaces"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+
+          <div class="stage-card-content">
+            <span class="stage-number">03 · THE NEXT STEP</span>
+            <h3>Junior School</h3>
+            <p>
+              As learners grow, they have more opportunities to develop
+              responsibility, broaden their knowledge and prepare for
+              the next phase of education.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- School values -->
+  <section class="values">
+    <div class="container values-grid">
+
+      <div class="value-item reveal">
+        <h3>Character</h3>
+        <p>
+          Helping learners develop respect, responsibility and consideration
+          for the people around them.
+        </p>
+      </div>
+
+      <div class="value-item reveal">
+        <h3>Curiosity</h3>
+        <p>
+          Encouraging children to ask questions, try new things and engage
+          actively with what they learn.
+        </p>
+      </div>
+
+      <div class="value-item reveal">
+        <h3>Community</h3>
+        <p>
+          Recognising the important role that children, families and educators
+          play in a child's school experience.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- School life -->
+  <section class="section" id="school-life">
+    <div class="container school-life-grid">
+
+      <div class="school-life-copy reveal">
+        <span class="eyebrow">Beyond the classroom</span>
+
+        <h2>There is more to school than a desk and a book.</h2>
+
+        <p>
+          Some of the most memorable learning experiences happen when
+          children move, create, practise a skill or try something unfamiliar.
+          Co-curricular activities can give learners a chance to discover
+          interests beyond their regular lessons.
+        </p>
+
+        <p>
+          Oakpark's school activities include opportunities such as sports,
+          music and other enrichment experiences. Families can contact the
+          school to learn which activities are currently available.
+        </p>
+
+        <div class="activity-list">
+          <div class="activity">
+            <span class="activity-mark">✳</span>
+            <span>Football</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-mark">✳</span>
+            <span>Roller skating</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-mark">✳</span>
+            <span>Music</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-mark">✳</span>
+            <span>Ballet</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-mark">✳</span>
+            <span>Taekwondo</span>
+          </div>
+
+          <div class="activity">
+            <span class="activity-mark">✳</span>
+            <span>Abacus</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="school-life-photo reveal">
+        <img
+          src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R3XCffXIbYZHtWVO9Qp8XgiDNEqN5MQ3B-Q_1DiCTJw0I7NELFzI3XUXPRVUlVYpd6izzwlkoHAioCEBiKr7QYhzyexLCUboFRpbwaX5dWeEaLfTeLSB-jWnaiz1DjXRr9RUHD2A=w1200-h900-k-no"
+          alt="Outdoor area at Oakpark Academy"
+          loading="lazy"
+          onerror="this.style.display='none'"
+        >
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+
+      <div class="section-heading reveal">
+        <span class="eyebrow">A look around</span>
+        <h2>Life around our school.</h2>
+        <p class="section-intro">
+          Take a look at some of the learning spaces and facilities associated
+          with Oakpark Academy.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9So3GnZxeX0PgijFjU1QKcc_X7yvnQ86ICVNPT5VKHFlBQCqhE6tHqR8o7wT00gcUubxn-yOUeNbidq9fkzhQZ3FcA4oU7DXzF3MIaYnY1AA4nEI6Tei9TzPlb7WPksaXc1YMzs=w1000-h1200-k-no"
+            alt="Oakpark Academy school environment"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+          <span class="gallery-label">Our school environment</span>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tig6FtJSRD41Y_M-tRuoYfTFnKCVlUOERQJtPbYbrpLb4Anp8Vaf9yC8wdI8mz3PSru2hnafFIzP-hCrakQs1bcIzPtLTVUEDljv_EIFhvvUlwcShlrq5PHX1lGorVbdesQI26=w900-h700-k-no"
+            alt="Oakpark Academy grounds"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+          <span class="gallery-label">Space to explore</span>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SOpBBQYZrAzEPxGS_8ltB9dnXyN0w2J9MsgI9HaMw2jIu6xW2Uz5FqvhhjyejnXPHOe4WLM8Cj2i3umrVRBPVc2KjziEay-mrxxZ1JahqI0fB2YiTqlWK2ysN4l4fmjpNMUDmk=w900-h800-k-no"
+            alt="School learning facilities"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+          <span class="gallery-label">Learning spaces</span>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://lh3.googleusercontent.com/grass-cs/AABkmLcwcfkN1qf2aUVckiwabq-J84JTFIhUORFP_LCKK8Eyy-nshMyFX8HVXJlOp3jI8UJnHZRwU_MoZ21zVOPyyxSKHTebKgymEeN5Vd53MYlPt25mqPKiiB-iwkBSnjolOYaysIGGsg=w900-h1000-k-no"
+            alt="Oakpark Academy school photo"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+          <span class="gallery-label">Around Oakpark</span>
+        </div>
+
+        <div class="gallery-item reveal">
+          <img
+            src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RHbURNg2rgbNVfMRVkn2jUuuXeARJGfxCBHGzjDECK_fRD7o0ZiXnF-pRMjTYXXg5tA3M3VInniPkQKOWNHMgjWAqE825GOD2smO7Kh7TXzh2qT463vdznbmZ9ctmeZfyUeJa3=w900-h800-k-no"
+            alt="Oakpark Academy classroom"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          >
+          <span class="gallery-label">Inside the classroom</span>
+        </div>
+
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <a
+          class="text-link"
+          href="https://www.google.com/maps/place/Oakpark+Academy+-+Kindergarten,+Primary+%26+Junior+School/@-1.2619859,36.7171531,17z/data=!3m1!4b1!4m6!3m5!1s0x182f19301cdfea11:0x14a1ceaf00403786!8m2!3d-1.2619913!4d36.719728!16s%2Fg%2F11fq832q9z?entry=ttu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Find us on Google Maps <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Admissions -->
+  <section class="admissions" id="admissions">
+    <div class="container">
+      <div class="admissions-panel reveal">
+
+        <div>
+          <span class="eyebrow">Take the next step</span>
+          <h2>Could Oakpark be the right place for your child?</h2>
+          <p>
+            Get in touch to ask about admissions, available classes, school
+            activities or arranging a visit. Our team can help you find out
+            what you need to know.
+          </p>
+        </div>
+
+        <div class="admissions-actions">
+          <a class="btn btn-green" href="tel:+254795558185">
+            Call the School
+          </a>
+
+          <a
+            class="btn btn-light"
+            href="https://wa.me/254795558185?text=Hello%20Oakpark%20Academy%2C%20I%20would%20like%20to%20enquire%20about%20admissions."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp Enquiry
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-grid">
+
+      <div class="contact-copy reveal">
+        <span class="eyebrow">Come and talk to us</span>
+        <h2>Let's start a conversation.</h2>
+
+        <p>
+          If you are considering Oakpark Academy for your child, contact us
+          directly or use the map to plan your visit.
+        </p>
+
+        <div class="contact-detail">
+          <p>
+            <strong>Phone</strong>
+            <a href="tel:+254795558185">+254 795 558185</a>
+          </p>
+
+          <p>
+            <strong>Location</strong>
+            Uthiru, Nairobi, Kenya
+          </p>
+
+          <p>
+            <strong>School hours</strong>
+            Monday–Friday: 8:00 am–5:00 pm<br>
+            Saturday: 8:00 am–2:00 pm<br>
+            Sunday: Closed
+          </p>
+        </div>
+
+        <a
+          class="text-link"
+          href="https://www.google.com/maps/place/Oakpark+Academy+-+Kindergarten,+Primary+%26+Junior+School/@-1.2619859,36.7171531,17z/data=!3m1!4b1!4m6!3m5!1s0x182f19301cdfea11:0x14a1ceaf00403786!8m2!3d-1.2619913!4d36.719728!16s%2Fg%2F11fq832q9z?entry=ttu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Get directions <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="map-panel reveal">
+        <span class="eyebrow" style="color:#f0d29a;">Visit Oakpark</span>
+        <h3>Find us in Uthiru.</h3>
+        <p>
+          Open the map for directions to Oakpark Academy, Kindergarten,
+          Primary & Junior School.
+        </p>
+        <a
+          class="btn btn-gold"
+          href="https://www.google.com/maps/place/Oakpark+Academy+-+Kindergarten,+Primary+%26+Junior+School/@-1.2619859,36.7171531,17z/data=!3m1!4b1!4m6!3m5!1s0x182f19301cdfea11:0x14a1ceaf00403786!8m2!3d-1.2619913!4d36.719728!16s%2Fg%2F11fq832q9z?entry=ttu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Google Maps ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+
+    <div>
+      <a class="footer-brand" href="#home">Oakpark Academy</a>
+      <p>Kindergarten · Primary · Junior School</p>
+      <p>Uthiru, Nairobi, Kenya</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#about">Our School</a>
+      <a href="#learning">Learning</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="tel:+254795558185">Call Us</a>
+    </div>
+
+  </div>
+
+  <div class="container" style="margin-top:25px; padding-top:18px; border-top:1px solid rgba(255,255,255,.13);">
+    <p style="font-size:11px;">
+      © <span id="year"></span> Oakpark Academy. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+/* Mobile navigation */
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  menuToggle.setAttribute(
+    "aria-label",
+    isOpen ? "Close navigation menu" : "Open navigation menu"
+  );
+  menuToggle.textContent = isOpen ? "×" : "☰";
+});
+
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Open navigation menu");
+    menuToggle.textContent = "☰";
+  });
+});
+
+/* Reveal sections as they enter the screen */
+const revealElements = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12
+  });
+
+  revealElements.forEach(element => observer.observe(element));
+} else {
+  revealElements.forEach(element => element.classList.add("visible"));
+}
+
+/* Automatic copyright year */
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
